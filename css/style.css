@@ -1,0 +1,17 @@
+:root {
+  --heading-font: "Poppins", sans-serif;
+  --primary-pink: hsl(322, 100%, 66%);
+  --dark-cyan: hsl(192, 100%, 9%);
+  --pale-blue: hsl(207, 100%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
