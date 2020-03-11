@@ -1,8 +1,13 @@
+/* Resets */
 :root {
   --heading-font: "Poppins", sans-serif;
   --primary-pink: hsl(322, 100%, 66%);
   --dark-cyan: hsl(192, 100%, 9%);
   --pale-blue: hsl(207, 100%, 98%);
+}
+
+html {
+  font-size: 62.5%;
 }
 
 *,
@@ -14,4 +19,97 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+/* Custom Utility Classes */
+.button {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.7px;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button--outline {
+  border: 1px solid var(--primary-pink);
+  color: var(--primary-pink);
+}
+.button--outline:hover {
+  background-color: var(--primary-pink);
+  color: white;
+}
+.button--bg {
+  background-color: var(--primary-pink);
+  color: white;
+}
+.button--bg:hover {
+  color: white;
+  background-color: transparent;
+  color: var(--primary-pink);
+  border: 3px solid var(--primary-pink);
+}
+.button--rounded {
+  border-radius: 100px;
+}
+.button--sm {
+  font-size: 1.5rem;
+  padding: 0.7rem 2.8rem;
+}
+.button--md {
+}
+.button--lg {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 7rem;
+}
+
+/* Main Section */
+.main {
+}
+.main__heading {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 4rem;
+}
+.main__paragraph {
+  font-size: 1.7rem;
+  max-width: 500px;
+}
+.main__img {
+  margin: 14rem auto 0 auto;
+  max-width: 900px;
+}
+.main__img img {
+  width: 100%;
+}
+
+/* Numbers Section */
+.numbers {
+  margin-top: 15rem;
+}
+.number {
+}
+.number__icon {
+}
+.number__heading {
+  font-size: 8rem;
+  font-family: var(--heading-font);
+}
+.number__paragraph {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+/* Info Section */
+.info {
+}
+.info__heading {
+  font-family: var(--heading-font);
+  font-size: 4rem;
+}
+.info__paragraph {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+.info__img {
 }
