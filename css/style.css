@@ -133,10 +133,19 @@ body {
 
 /* Footer */
 .footer {
-  padding: 15rem 0;
-  background-color: var(--dark-cyan);
+  padding-top: 15rem;
+  background: url(../images/bg-footer-top-desktop.svg) no-repeat;
+  /* background-position: center; */
 }
-
+@media (max-width: 450px) {
+  .footer {
+    background: url(../images/bg-footer-top-mobile.svg) no-repeat;
+  }
+}
+.footer__content {
+  background: var(--dark-cyan);
+  padding: 13rem 0;
+}
 .footer__paragraph {
   font-size: 1.4rem;
   opacity: 0.8;
